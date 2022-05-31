@@ -15,7 +15,7 @@ export default function Button({ children, disabled, onClick }) {
           color: #fff;
           cursor: pointer;
           display: flex;
-          font-size: 16px;
+          font-size: 12px;
           font-weight: 800;
           padding: 8px 24px;
           transition: opacity 0.3s ease;
@@ -30,7 +30,7 @@ export default function Button({ children, disabled, onClick }) {
           margin-right: 8px;
         }
         button:hover {
-          opacity: 0.7;
+          opacity: 0.8;
         }
       `}</style>
     </>

@@ -8,8 +8,9 @@ const backgroundColor = addOpacityToColor(colors.primary, 0.3);
 export const globalStyles = css.global`
   html,
   body {
-    background-image: radial-gradient(${backgroundColor} 1px, #fdfdfd 1px),
-      radial-gradient(${backgroundColor} 1px, #fdfdfd 1px);
+    /* background-image: radial-gradient(${backgroundColor} 1px, #fdfdfd 1px),
+      radial-gradient(${backgroundColor} 1px, #fdfdfd 1px); */
+    background-color: ${colors.black};
     background-position: 0 0, 25px 25px;
     background-size: 50px 50px;
     padding: 0;
@@ -33,13 +34,24 @@ export default css`
     place-items: center;
   }
   main {
-    background: #fff;
+    background: ${colors.white};
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     height: 100%;
     overflow-y: auto;
     position: relative;
     width: 100%;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: ${colors.white};
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: ${colors.strong};
   }
   @media (min-width: ${breakpoints.mobile}) {
     main {

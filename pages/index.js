@@ -36,12 +36,12 @@ export default function Home() {
 
       <AppLayout>
         <section>
-          <Logo width="100" />
+          <Logo />
           <h1>Devter</h1>
           <h2>
             Talk about development
             <br />
-            with developers 👩‍💻👨‍💻
+            with developers 🚀
           </h2>
 
           <div>
@@ -51,7 +51,7 @@ export default function Home() {
                 Login with GitHub
               </Button>
             )}
-            {user === USER_STATES.NOT_KNOWN && <img src="/spinner.gif" />}
+            {user === USER_STATES.NOT_KNOWN && <img src="/spinner1.gif" />}
           </div>
         </section>
       </AppLayout>
@@ -72,11 +72,13 @@ export default function Home() {
         h1 {
           color: ${colors.primary};
           font-weight: 800;
-          font-size: 32px;
-          margin-bottom: 16px;
+          font-size: 38px;
+          margin-top: 5px;
+          margin-bottom: 10px;
         }
         h2 {
-          color: ${colors.secondary};
+          color: ${colors.strong};
+          text-align: center;
           font-size: 21px;
           margin: 0;
         }

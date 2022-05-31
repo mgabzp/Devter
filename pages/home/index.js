@@ -42,17 +42,17 @@ export default function HomePage() {
         <nav>
           <Link href="/home">
             <a>
-              <Home width={32} height={32} stroke="#09f" />
+              <Home width={32} height={32} stroke={colors.primary} />
             </a>
           </Link>
           <Link href="/search">
             <a>
-              <Search width={32} height={32} stroke="#09f" />
+              <Search width={32} height={32} stroke={colors.primary} />
             </a>
           </Link>
           <Link href="/compose/tweet">
             <a>
-              <Create width={32} height={32} stroke="#09f" />
+              <Create width={32} height={32} stroke={colors.primary} />
             </a>
           </Link>
         </nav>
@@ -70,6 +70,7 @@ export default function HomePage() {
           width: 100%;
         }
         section {
+          background: #eee;
           flex: 1;
         }
         h2 {
@@ -79,8 +80,9 @@ export default function HomePage() {
         }
         nav {
           background: #fff;
-          bottom: 0;
+          bottom: -1px;
           border-top: 1px solid #eee;
+          border-radius: 15px;
           display: flex;
           height: 49px;
           position: sticky;
@@ -94,12 +96,12 @@ export default function HomePage() {
           justify-content: center;
         }
         nav a:hover {
-          background: radial-gradient(#0099ff22 15%, transparent 16%);
+          background: radial-gradient(#cd6155 15%, transparent 16%);
           background-size: 180px 180px;
           background-position: center;
         }
         nav a:hover > :global(svg) {
-          stroke: ${colors.primary};
+          stroke: ${colors.black};
         }
       `}</style>
     </>
